@@ -25,6 +25,9 @@ class Wizard(val name: String, var mana: Int, var spellPower: Int) {
     }
 
     fun train() {
-        // Skeleton for train method
+        if (mana >= 5) {
+            spellPower += 1
+            mana -= 5
+        }
     }
 }
